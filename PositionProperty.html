@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> New Tab </title>
+    <style>
+        .box{
+            display: inline-block;      /* It means it will shown in the same line*/
+            height: 100px;
+            width: 100px;
+            border: 3px solid cadetblue;
+
+        }
+
+        .container{
+            height: 1555px;
+            background-color: beige;
+            border: 2px solid black;
+        }
+
+        #box3{
+            /*position: relative;      /* Static Absolute Relative Sticky Fixed* Position properties */
+            position: fixed;
+            right: 2px ;                /*This is for fixed box in the bottom right end...*/
+            bottom: 2px;
+            /*left: 20px;*/
+        }
+
+        #box1{
+            position: sticky;           /* This will make the element move with the screen*/
+            top: 4px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"> BOX 1 </div>
+        <div class="box" id="box2"> BOX 2 </div>
+        <div class="box" id="box3"> BOX 3 </div>
+        <div class="box" id="box4"> BOX 4 </div>
+        <div class="box" id="box5"> BOX 5 </div>
+        <div class="box" id="box6"> BOX 6 </div>
+    </div>
+</body>
+</html>
