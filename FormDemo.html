@@ -36,8 +36,13 @@
 
             <tr>
                 <td><label> Gender : </label></td>
-                <td> <input type ="radio" name="m"> Male
+                <td> <input type ="radio" name="m" checked> Male    <!-- Here we have set checked so the male button is highlighted already,just writing checked will show it as already selected -->
                 <td> <input type ="radio" name="m"> Female
+            </tr>
+            <tr>
+                <td><label for="age"> Age: </label></td>
+                <td><input type="number" id="age" name="age" min="1" max="120" step="1" required></td>  <!-- This is to type age manually where it is specified as int, wasn't taught i have done this myself from chatgpt-->
+                
             </tr>
 
             <tr>
